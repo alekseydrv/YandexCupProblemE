@@ -2,11 +2,11 @@ from collections import defaultdict
 import sys
 
 def dfs(v):
-    component[v] = num_components
-    visited[v] = True
-    for w in D[v]:
-        if visited[w] == False:  # посещён ли текущий сосед?
-            dfs(w)
+  component[v] = num_components
+  visited[v] = True
+  for w in D[v]:
+    if visited[w] == False:  # посещён ли текущий сосед?
+      dfs(w)
 
 D = defaultdict(list)
 tmp = defaultdict(list)
